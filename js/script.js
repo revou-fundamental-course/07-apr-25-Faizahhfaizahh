@@ -20,20 +20,6 @@ setInterval(() => {
     plusDivs(1);
 },3000)
 
-// function validationForm(){
-//     console.log("Form validation started");
-//     const name = document.getElementById('name').value;
-//     console.log('Name', name);
-
-//     if (name != '') {
-//         alert('Please enter yout name!')
-//     } else {
-//         // Disini logika ketika sukses
-//         alert('Thank you for your submission!')
-//     }
-    
-// }
-
 function validationForm() {
     const name = document.getElementById('name').value.trim();
     const dob = document.getElementById('date').value;
