@@ -11,8 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- JS External -->
-    <script src="js/script.js"></script>
+
 </head>
 <body>
     <!-- Header Content -->
@@ -22,10 +21,10 @@
 
         <!-- Navigation* -->
         <nav class="header-wrapper">
-            <a href="home-section">Home</a>
-            <a href="our-profile-section">Our Profile</a>
-            <a href="portofolio-section">Portofolio</a>
-            <a href="message-us-section">Message Us</a>
+            <a href="#home-section">Home</a>
+            <a href="#our-profile-section">Our Profile</a>
+            <a href="#portofolio-section">Portofolio</a>
+            <a href="#message-us-section">Message Us</a>
         </nav>
     </header>
 
@@ -40,21 +39,13 @@
                 <p>We're Devign Studio - a creative team of designers and developers passionate about building clean, bold, and user-friendly digital products. <br>Let's bring your ideas to life!</p>
             </header>
 
-            <!-- Banner Content* -->
-            <!-- <div id="banner-img">
-                <div id="banner-img-slider">
-                    <img src="assets/banner img 1.jpg" alt="banner img 1">
-                    <img src="assets/banner img 2.jpg" alt="banner img 2">
-                    <img src="assets/banner img 3.jpg" alt="banner img 3">
-                </div>
-            </div> -->
-
+            <!-- Banner Content -->
             <div>
-                <img src="assets/banner img 1.jpg" alt="banner img 1" class="mySlides">
-                <img src="assets/banner img 2.jpg" alt="banner img 2" class="mySlides">
-                <img src="assets/banner img 3.jpg" alt="banner img 3" class="mySlides">
-                <button onclick="plusDivs(-1)">Previous</button>
-                <button onclick="plusDivs(1)">Next</button>
+                <img src="assets/banner img 1.jpg" alt="banner1" class="mySlides">
+                <img src="assets/banner img 2.jpg" alt="banner2" class="mySlides">
+                <img src="assets/banner img 3.jpg" alt="banner3" class="mySlides">
+                <img src="assets/banner img 4.jpg" alt="banner4" class="mySlides">
+                <img src="assets/banner img 5.jpg" alt="banner5" class="mySlides">
             </div>
 
             <article class="section-content">
@@ -70,7 +61,7 @@
                 <h2>Our Profile</h2>
             </header>
 
-            <article class="section-content">
+            <article class="section-content-our-profile">
                 <div class="section-content-left">
                     <h3>Our Vision</h3>
                     <p>To be a leading creative studio providing innovative digital solutions for businesses.</p>
@@ -103,22 +94,86 @@
                 <h2>Portofolio</h2>
             </header>
 
-            <!-- Portfolio Text -->
-            <article class="section-content">
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
-            </article>
+            <!-- Portfolio -->
+             <div class="portofolio-container">
+                <div class="portofolio-card">
+                    <img src="assets/portofolio1.jpg" alt="img portofolio 1">
+                    <h3>FireFit</h3>
+                    <p>A fitness app that helps users track workouts, set goals, and stay motivated through personalized routines.</p>
+                    <a href="#" target="_blank">See More</a>
+                </div>
+                <div class="portofolio-card">
+                    <img src="assets/portofolio1.jpg" alt="img portofolio 2">
+                    <h3>FireFit</h3>
+                    <p>A fitness app that helps users track workouts, set goals, and stay motivated through personalized routines.</p>
+                    <a href="#" target="_blank">See More</a>
+                </div>
+                <div class="portofolio-card">
+                    <img src="assets/portofolio1.jpg" alt="img portofolio 3">
+                    <h3>FireFit</h3>
+                    <p>A fitness app that helps users track workouts, set goals, and stay motivated through personalized routines.</p>
+                    <a href="#" target="_blank">See More</a>
+                </div>
+                <div class="portofolio-card">
+                    <img src="assets/portofolio1.jpg" alt="img portofolio 4">
+                    <h3>FireFit</h3>
+                    <p>A fitness app that helps users track workouts, set goals, and stay motivated through personalized routines.</p>
+                    <a href="#" target="_blank">See More</a>
+                </div>
+             </div>
+            
             </section>
 
         <hr />
 
         <!-- Messsage Us Section -->
         <section id="message-us-section">
-            <header class="text">
+            <header class="text" id="temp-message">
                 <h2>Message Us</h2>
             </header>
 
-            <!-- Message Us Form -->
-             <form action=""></form>
+            <div class="msg-us">
+                <!-- Message Us Form -->
+                <div class="msg-form">
+                    <form action="" method="POST">
+                            <div class="form-label">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-label">
+                                <label for="date">Date of Birth:</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+
+                            <div class="form-label gender-group">
+                                <div class="gender-options">
+                                    <label for="gender">Gender:</label>
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </div>
+                            </div>
+
+                            <div class="form-label">
+                                <label for="msg">Message:</label>
+                                <textarea name="msg" id="msg" rows="4" cols="50"></textarea>
+                            </div>
+
+                            <div class="form-label">
+                                <button  type="button" onclick="validationForm()">Submit</button>
+                            </div>
+                    </form>
+                </div>
+
+                <!-- Output Message -->
+                <div class="output-msg">
+                    <textarea name="output-msg-us" id="output-msg-us" rows="10" cols="35"></textarea>
+                </div>
+            </div>
+             
         </section>
     </main>
 
@@ -126,7 +181,10 @@
 
     <!-- Footer Content -->
     <footer>
-        <span>Made by </span>
+        <span>Created by RevoU </span>
     </footer>
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
 </body>
 </html>
